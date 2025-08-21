@@ -49,11 +49,11 @@ def ordenados():
 
 def menu():
     while True:
-        print("\n===== MENÚ PRINCIPAL =====")
-        print("1. Buscar saldo por nombre")
+        print("\n MENÚ PRINCIPAL ")
+        print("1. Buscar saldo por el nombre")
         print("2. Contar clientes con saldo mayor a 50")
-        print("3. Listar clientes ordenados por saldo")
-        print("4. Salir")
+        print("3. Listado clientes ordenados por el saldo")
+        print("4. EXIT")
 
         opcion = input("Elige una opción (1-4): ")
 
