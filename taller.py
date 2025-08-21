@@ -2,7 +2,7 @@ from pathlib import Path
 
 S = Path("notas.txt") 
 
-def buscar_saldo():
+def saldo():
     nombre = input("Ingrese el nombre del cliente: ")
     try:
         with open(S, "r", encoding="utf-8") as f:
@@ -17,7 +17,7 @@ def buscar_saldo():
         print(" ERROR.")
 
 
-def contar_mayores_50():
+def mayores():
     contador = 0
     try:
         with open(S, "r", encoding="utf-8") as f:
@@ -31,7 +31,7 @@ def contar_mayores_50():
         print(" ERROR")
 
 
-def listar_ordenados():
+def ordenados():
     clientes = []
     try:
         with open(S, "r", encoding="utf-8") as f:
@@ -58,11 +58,11 @@ def menu():
         opcion = input("Elige una opción (1-4): ")
 
         if opcion == "1":
-            buscar_saldo()
+            saldo()
         elif opcion == "2":
-            contar_mayores_50()
+            mayores()
         elif opcion == "3":
-            listar_ordenados()
+            ordenados()
         elif opcion == "4":
             print(" Saliendo")
             break
