@@ -40,7 +40,7 @@ def listar_ordenados():
                 cedula, nombre, saldo = linea.strip().split(",")
                 clientes.append((nombre, float(saldo)))
         clientes.sort(key=lambda x: x[1])  # ordenar por saldo
-        print("\n📋 Clientes ordenados por saldo:")
+        print("\n Clientes ordenados por saldo:")
         for nombre, saldo in clientes:
             print(f"{nombre} - {saldo}")
     except IOError:
